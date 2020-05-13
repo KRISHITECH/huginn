@@ -61,13 +61,13 @@ gem 'omniauth-tumblr', '~> 1.2'
 
 # Dropbox Agents
 gem 'dropbox-api'
-gem 'omniauth-dropbox'
+gem 'omniauth-dropbox', '>= 0.2.0'
 
 # UserLocationAgent
 gem 'haversine'
 
 # EvernoteAgent
-gem 'omniauth-evernote'
+gem 'omniauth-evernote', '>= 1.2.1'
 gem 'evernote_oauth'
 
 # LocalFileAgent (watch functionality)
@@ -77,8 +77,8 @@ gem 'listen', '~> 3.0.5', require: false
 gem 'aws-sdk-core', '~> 2.2.15'
 
 # Optional Services.
-gem 'omniauth-37signals'          # BasecampAgent
-gem 'omniauth-wunderlist'
+gem 'omniauth-37signals'          , '>= 1.0.5' # BasecampAgent
+gem 'omniauth-wunderlist', '>= 0.0.2'
 
 # Bundler <1.5 does not recognize :x64_mingw as a valid platform name.
 # Unfortunately, it can't self-update because it errors when encountering :x64_mingw.
@@ -88,13 +88,13 @@ unless Gem::Version.new(Bundler::VERSION) >= Gem::Version.new('1.5.0')
 end
 
 gem 'ace-rails-ap', '~> 2.0.1'
-gem 'bootstrap-kaminari-views', '~> 0.0.3'
+gem 'bootstrap-kaminari-views', '~> 0.0.5'
 gem 'bundler', '>= 1.5.0'
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.1'
 gem 'daemons', '~> 1.1.9'
 gem 'delayed_job', '~> 4.1.0'
 gem 'delayed_job_active_record', github: 'dsander/delayed_job_active_record', branch: 'rails5'
-gem 'devise','~> 4.2.0'
+gem 'devise', '~> 4.2.0'
 gem 'em-http-request', '~> 1.1.2'
 gem 'faraday', '~> 0.9'
 gem 'faraday_middleware', github: 'lostisland/faraday_middleware', branch: 'master'  # '>= 0.10.1'
@@ -119,9 +119,9 @@ gem 'nokogiri'
 gem 'omniauth', '~> 1.3.1'
 gem 'rails', '~> 5.0.1'
 gem 'rufus-scheduler', '~> 3.3.2', require: false
-gem 'sass-rails',   '~> 5.0.6'
+gem 'sass-rails', '~> 5.0.6'
 gem 'select2-rails', '~> 3.5.4'
-gem 'spectrum-rails'
+gem 'spectrum-rails', '>= 1.3.4'
 gem 'therubyracer', '~> 0.12.2'
 gem 'typhoeus', '~> 0.6.3'
 gem 'uglifier', '~> 2.7.2'
@@ -134,7 +134,7 @@ group :development do
   gem 'guard-rspec', '~> 4.6.4'
   gem 'rack-livereload', '~> 0.3.16'
   gem 'letter_opener_web', '~> 1.3.0'
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.3.1'
 
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rails', '~> 1.1'
@@ -148,9 +148,9 @@ group :development do
 
   group :test do
     gem 'coveralls', '~> 0.7.4', require: false
-    gem 'capybara-select2', require: false
+    gem 'capybara-select2', '>= 1.0.1', require: false
     gem 'delorean'
-    gem 'poltergeist'
+    gem 'poltergeist', '>= 1.8.1'
     gem 'pry-rails'
     gem 'pry-byebug'
     gem 'rr'
@@ -158,7 +158,7 @@ group :development do
     gem 'rspec-collection_matchers', '~> 1.1.0'
     gem 'rspec-rails', '~> 3.5.2'
     gem 'rspec-html-matchers', '~> 0.8'
-    gem 'rails-controller-testing'
+    gem 'rails-controller-testing', '>= 1.0.1'
     gem 'shoulda-matchers'
     gem 'vcr'
     gem 'webmock', '~> 1.17.4', require: false
