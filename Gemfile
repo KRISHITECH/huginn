@@ -36,7 +36,7 @@ gem 'ruby-growl', '~> 4.1.0'      # GrowlAgent
 gem 'net-ftp-list', '~> 3.2.8'    # FtpsiteAgent
 gem 'wunderground', '~> 1.2.0'    # WeatherAgent
 gem 'forecast_io', '~> 2.0.0'     # WeatherAgent
-gem 'rturk', '~> 2.12.1'          # HumanTaskAgent
+gem 'rturk', '~> 2.12.1' # HumanTaskAgent
 gem 'hipchat', '~> 1.2.0'         # HipchatAgent
 gem 'xmpp4r',  '~> 0.5.6'         # JabberAgent
 gem 'mqtt'                        # MQTTAgent
@@ -88,17 +88,17 @@ unless Gem::Version.new(Bundler::VERSION) >= Gem::Version.new('1.5.0')
 end
 
 gem 'ace-rails-ap', '~> 2.0.1'
-gem 'bootstrap-kaminari-views', '~> 0.0.3'
+gem 'bootstrap-kaminari-views', '~> 0.0.5'
 gem 'bundler', '>= 1.5.0'
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.1'
 gem 'daemons', '~> 1.1.9'
 gem 'delayed_job', '~> 4.1.0'
 gem 'delayed_job_active_record', github: 'dsander/delayed_job_active_record', branch: 'rails5'
-gem 'devise','~> 4.2.0'
+gem 'devise', '~> 4.2.0'
 gem 'em-http-request', '~> 1.1.2'
 gem 'faraday', '~> 0.9'
 gem 'faraday_middleware', github: 'lostisland/faraday_middleware', branch: 'master'  # '>= 0.10.1'
-gem 'feedjira', '~> 2.1'
+gem 'feedjira', '~> 2.1', '>= 2.1.0'
 gem 'font-awesome-sass', '~> 4.3.2'
 gem 'foreman', '~> 0.63.0'
 gem 'geokit', '~> 1.8.4'
@@ -112,16 +112,16 @@ gem 'jsonpathv2', '~> 0.0.8'
 gem 'kaminari', github: "amatsuda/kaminari", branch: '0-17-stable', ref: 'abbf93d557208ee1d0b612c612cd079f86ed54f4'
 gem 'kramdown', '~> 1.3.3'
 gem 'liquid', '~> 3.0.3'
-gem 'loofah', '~> 2.0'
+gem 'loofah', '~> 2.0', '>= 2.0.3'
 gem 'mini_magick'
 gem 'multi_xml'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.11.4'
 gem 'omniauth', '~> 1.3.1'
 gem 'rails', '~> 5.0.1'
 gem 'rufus-scheduler', '~> 3.3.2', require: false
-gem 'sass-rails',   '~> 5.0.6'
+gem 'sass-rails', '~> 5.0.6'
 gem 'select2-rails', '~> 3.5.4'
-gem 'spectrum-rails'
+gem 'spectrum-rails', '>= 1.3.4'
 gem 'therubyracer', '~> 0.12.2'
 gem 'typhoeus', '~> 0.6.3'
 gem 'uglifier', '~> 2.7.2'
@@ -134,7 +134,7 @@ group :development do
   gem 'guard-rspec', '~> 4.6.4'
   gem 'rack-livereload', '~> 0.3.16'
   gem 'letter_opener_web', '~> 1.3.0'
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.3.1'
 
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rails', '~> 1.1'
@@ -148,17 +148,17 @@ group :development do
 
   group :test do
     gem 'coveralls', '~> 0.7.4', require: false
-    gem 'capybara-select2', require: false
+    gem 'capybara-select2', '>= 1.0.1', require: false
     gem 'delorean'
-    gem 'poltergeist'
+    gem 'poltergeist', '>= 1.8.1'
     gem 'pry-rails'
     gem 'pry-byebug'
     gem 'rr'
     gem 'rspec', '~> 3.5'
     gem 'rspec-collection_matchers', '~> 1.1.0'
     gem 'rspec-rails', '~> 3.5.2'
-    gem 'rspec-html-matchers', '~> 0.8'
-    gem 'rails-controller-testing'
+    gem 'rspec-html-matchers', '~> 0.8', '>= 0.8.1'
+    gem 'rails-controller-testing', '>= 1.0.1'
     gem 'shoulda-matchers'
     gem 'vcr'
     gem 'webmock', '~> 1.17.4', require: false
