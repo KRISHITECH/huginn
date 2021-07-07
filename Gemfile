@@ -34,7 +34,7 @@ end
 gem 'twilio-ruby', '~> 3.11.5'    # TwilioAgent
 gem 'ruby-growl', '~> 4.1.0'      # GrowlAgent
 gem 'net-ftp-list', '~> 3.2.8'    # FtpsiteAgent
-gem 'wunderground', '~> 1.2.0'    # WeatherAgent
+gem 'wunderground', '~> 1.2.0' # WeatherAgent
 gem 'forecast_io', '~> 2.0.0'     # WeatherAgent
 gem 'rturk', '~> 2.12.1'          # HumanTaskAgent
 gem 'hipchat', '~> 1.2.0'         # HipchatAgent
@@ -48,7 +48,7 @@ gem 'hypdf', '~> 1.0.10'          # PDFInfoAgent
 gem 'weibo_2', github: 'dsander/weibo_2', branch: 'master'
 
 # GoogleCalendarPublishAgent
-gem "google-api-client", require: 'google/api_client'
+gem "google-api-client", ">= 0.7.1", require: 'google/api_client'
 
 # Twitter Agents
 gem 'twitter', '~> 5.14.0' # Must to be loaded before cantino-twitter-stream.
@@ -148,9 +148,9 @@ group :development do
 
   group :test do
     gem 'coveralls', '~> 0.7.4', require: false
-    gem 'capybara-select2', require: false
+    gem 'capybara-select2', '>= 1.0.1', require: false
     gem 'delorean'
-    gem 'poltergeist'
+    gem 'poltergeist', '>= 1.8.1'
     gem 'pry-rails'
     gem 'pry-byebug'
     gem 'rr'
