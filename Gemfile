@@ -156,7 +156,7 @@ group :development do
     gem 'rr'
     gem 'rspec', '~> 3.5'
     gem 'rspec-collection_matchers', '~> 1.1.0'
-    gem 'rspec-rails', '~> 3.5.2'
+    gem 'rspec-rails', '~> 8.0.0'
     gem 'rspec-html-matchers', '~> 0.8'
     gem 'rails-controller-testing'
     gem 'shoulda-matchers'
