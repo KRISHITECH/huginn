@@ -35,7 +35,7 @@ gem 'twilio-ruby', '~> 3.11.5'    # TwilioAgent
 gem 'ruby-growl', '~> 4.1.0'      # GrowlAgent
 gem 'net-ftp-list', '~> 3.2.8'    # FtpsiteAgent
 gem 'wunderground', '~> 1.2.0'    # WeatherAgent
-gem 'forecast_io', '~> 2.0.0'     # WeatherAgent
+gem 'forecast_io', '~> 2.0.2' # WeatherAgent
 gem 'rturk', '~> 2.12.1'          # HumanTaskAgent
 gem 'hipchat', '~> 1.2.0'         # HipchatAgent
 gem 'xmpp4r',  '~> 0.5.6'         # JabberAgent
@@ -48,10 +48,10 @@ gem 'hypdf', '~> 1.0.10'          # PDFInfoAgent
 gem 'weibo_2', github: 'dsander/weibo_2', branch: 'master'
 
 # GoogleCalendarPublishAgent
-gem "google-api-client", require: 'google/api_client'
+gem "google-api-client", ">= 0.9", require: 'google/api_client'
 
 # Twitter Agents
-gem 'twitter', '~> 5.14.0' # Must to be loaded before cantino-twitter-stream.
+gem 'twitter', '~> 6.2.0' # Must to be loaded before cantino-twitter-stream.
 gem 'twitter-stream', github: 'cantino/twitter-stream', branch: 'huginn'
 gem 'omniauth-twitter', '~> 1.2.1'
 
@@ -96,9 +96,9 @@ gem 'delayed_job', '~> 4.1.0'
 gem 'delayed_job_active_record', github: 'dsander/delayed_job_active_record', branch: 'rails5'
 gem 'devise','~> 4.2.0'
 gem 'em-http-request', '~> 1.1.2'
-gem 'faraday', '~> 0.9'
+gem 'faraday', '~> 2.14', '>= 2.14.1'
 gem 'faraday_middleware', github: 'lostisland/faraday_middleware', branch: 'master'  # '>= 0.10.1'
-gem 'feedjira', '~> 2.1'
+gem 'feedjira', '~> 3.0', '>= 3.0.0'
 gem 'font-awesome-sass', '~> 4.3.2'
 gem 'foreman', '~> 0.63.0'
 gem 'geokit', '~> 1.8.4'
